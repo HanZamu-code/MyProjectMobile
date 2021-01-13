@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/icon_login"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/name_login"
+        android:layout_width="210dp"
+        android:gravity="center_horizontal"
+        android:layout_height="60dp"
+        android:layout_marginTop="70dp"
+        android:elevation="12dp"
+        android:background="@drawable/costumebg2"
+        android:layout_centerHorizontal="true"
+        android:text="Login"
+        android:fontFamily="sans-serif"
+        android:textColor="#3174DC"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/namaDaddyKos"
+        android:layout_below="@id/name_login"
+        android:layout_width="190dp"
+        android:gravity="center_horizontal"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:elevation="12dp"
+        android:background="@drawable/costumebg2"
+        android:layout_centerHorizontal="true"
+        android:text="Daddy Kos"
+        android:fontFamily="sans-serif"
+        android:textColor="#3174DC"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+    <ImageView
+        android:id="@+id/icon_username"
+        android:layout_below="@+id/name_login"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="172dp"
+        android:layout_marginEnd="40dp"
+        android:src="@drawable/user1" />
+
+    <ImageView
+        android:layout_height="45dp"
+        android:layout_width="45dp"
+        android:layout_below="@+id/icon_username"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="40dp"
+        android:src="@drawable/lock" />
+
+
+    <EditText
+        android:id="@+id/input_username"
+        android:layout_below="@+id/name_login"
+        android:layout_width="match_parent"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="180dp"
+        android:shadowColor="@color/colorPrimaryDark"
+        android:elevation="5dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/costumebg2"
+        android:hint="Username"
+        android:padding="10dp"
+        android:inputType="textPersonName"
+        tools:ignore="RtlCompat,UnusedAttribute" />
+
+    <EditText
+        android:id="@+id/input_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input_username"
+        android:background="@drawable/costumebg2"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:hint="Password"
+        android:elevation="5dp"
+        android:padding="10dp"
+        tools:ignore="RtlCompat,UnusedAttribute"
+        android:layout_marginLeft="100dp" />
+
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_below="@+id/input_password"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="130dp"
+        android:textColor="#fff"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/costumebg1"
+        android:layout_marginRight="40dp"
+        android:text="login" />
+
+    <Button
+        android:id="@+id/btnreset"
+        android:layout_toEndOf="@+id/btnlogin"
+        android:layout_marginStart="30dp"
+        android:layout_below="@+id/input_password"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="130dp"
+        android:textColor="#fff"
+        android:background="@drawable/costumebg1"
+        android:layout_marginRight="40dp"
+        android:text="reset"
+        android:layout_toRightOf="@+id/btnlogin" />
+</RelativeLayout>

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgrounda"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ViewDataAdminActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/view_home"
+        android:layout_marginTop="15dp"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/home"
+        app:civ_border_color="#fff"
+        app:civ_border_width="12dp"/>
+
+    <TextView
+        android:id="@+id/noKos"
+        android:layout_below="@id/view_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="40dp"
+        android:text="TextView"
+        android:layout_marginLeft="80dp" />
+
+    <TextView
+        android:id="@+id/namaKos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_alignLeft="@+id/noKos"
+        android:layout_below="@+id/noKos"
+        android:layout_marginTop="20dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/pemilikKos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_alignLeft="@+id/namaKos"
+        android:layout_below="@+id/namaKos"
+        android:layout_marginTop="20dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/alamatKos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pemilikKos"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/pemilikKos"
+        android:layout_marginTop="20dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/typeKos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/alamatKos"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/alamatKos"
+        android:layout_marginTop="20dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/fasilitasKos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/typeKos"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/typeKos"
+        android:layout_marginTop="20dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/contactKos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/fasilitasKos"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/fasilitasKos"
+        android:layout_marginTop="20dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/hargaKos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/contactKos"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/contactKos"
+        android:layout_marginTop="20dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/lokasiKos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/hargaKos"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/hargaKos"
+        android:layout_marginTop="20dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/lokasiKosan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/lokasiKos"
+        android:layout_alignBottom="@+id/lokasiKos"
+        android:layout_alignLeft="@+id/hargaKosan"
+        android:text="Lokasi" />
+
+    <TextView
+        android:id="@+id/hargaKosan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/hargaKos"
+        android:layout_alignBottom="@+id/hargaKos"
+        android:layout_alignLeft="@+id/contactKosan"
+        android:text="Harga" />
+
+    <TextView
+        android:id="@+id/contactKosan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/contactKos"
+        android:layout_alignBottom="@+id/contactKos"
+        android:layout_alignLeft="@+id/fasilitasKosan"
+        android:text="Contact" />
+
+    <TextView
+        android:id="@+id/fasilitasKosan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/fasilitasKos"
+        android:layout_alignBottom="@+id/fasilitasKos"
+        android:layout_alignLeft="@+id/typeKosan"
+        android:text="Fasilitas" />
+
+    <TextView
+        android:id="@+id/typeKosan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/typeKos"
+        android:layout_alignBottom="@+id/typeKos"
+        android:layout_alignLeft="@+id/alamatKosan"
+        android:text="Type" />
+
+    <TextView
+        android:id="@+id/alamatKosan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/alamatKos"
+        android:layout_alignBottom="@+id/alamatKos"
+        android:layout_alignLeft="@+id/pemilikKosan"
+        android:text="Alamat" />
+
+    <TextView
+        android:id="@+id/pemilikKosan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/pemilikKos"
+        android:layout_alignBottom="@+id/pemilikKos"
+        android:layout_alignLeft="@+id/namakosan"
+        android:text="Pemilik" />
+
+    <TextView
+        android:id="@+id/namakosan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/namaKos"
+        android:layout_alignBottom="@+id/namaKos"
+        android:layout_alignLeft="@+id/noKosan"
+        android:text="Nama" />
+
+    <TextView
+        android:id="@+id/noKosan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/noKos"
+        android:layout_marginStart="30dp"
+        android:text="Nomor kosan "
+        android:layout_alignBaseline="@+id/noKos"
+        android:layout_marginLeft="30dp" />
+
+
+    <TextView
+        android:id="@+id/lokasiKoss"
+        android:layout_below="@+id/lokasiKos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Masukkan lokasi tujuan"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:textSize="15sp"
+        android:gravity="center" />
+
+    <EditText
+        android:id="@+id/inputLokasi"
+        android:layout_below="@id/lokasiKoss"
+        android:layout_width="match_parent"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_height="40dp"
+        android:textSize="15sp"
+        android:padding="10dp"/>
+
+    <Button
+        android:id="@+id/btnLokasi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/lokasiKos"
+        android:layout_below="@+id/inputLokasi"
+        android:background="@drawable/costumebg1"
+        android:layout_marginTop="10dp"
+        android:textColor="#fff"
+        android:onClick="Pesan"
+        android:text="Pesan"
+        tools:ignore="OnClick"/>
+
+</RelativeLayout>

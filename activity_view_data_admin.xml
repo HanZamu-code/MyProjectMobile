@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgrounda"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ViewDataAdminActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/view_rumahsakit"
+        android:layout_marginTop="15dp"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/home"
+        app:civ_border_color="#fff"
+        app:civ_border_width="12dp"/>
+
+    <TextView
+        android:id="@+id/noRumahsakit"
+        android:layout_below="@id/view_rumahsakit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="40dp"
+        android:text="TextView"
+        android:textSize="17sp"
+        android:layout_marginLeft="80dp" />
+
+    <TextView
+        android:id="@+id/namaRumahsakit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_alignLeft="@+id/noRumahsakit"
+        android:textSize="17sp"
+        android:layout_below="@+id/noRumahsakit"
+        android:layout_marginTop="20dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/fasilitasRumahsakit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="17sp"
+        android:layout_alignLeft="@+id/namaRumahsakit"
+        android:layout_below="@+id/namaRumahsakit"
+        android:layout_marginTop="20dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/jenisRumahsakit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/fasilitasRumahsakit"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/fasilitasRumahsakit"
+        android:layout_marginTop="20dp"
+        android:textSize="17sp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/alamatRumahsakit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/jenisRumahsakit"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/jenisRumahsakit"
+        android:textSize="17sp"
+        android:layout_marginTop="20dp"
+        android:text="TextView" />
+
+
+
+    <TextView
+        android:id="@+id/no_Rumahsakit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/noRumahsakit"
+        android:layout_alignBottom="@+id/noRumahsakit"
+        android:textSize="17sp"
+        android:layout_alignLeft="@+id/nama_Rumahsakit"
+        android:text="Kode Rumah Sakit" />
+
+    <TextView
+        android:id="@+id/nama_Rumahsakit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/namaRumahsakit"
+        android:textSize="17sp"
+        android:layout_alignBottom="@+id/namaRumahsakit"
+        android:layout_alignLeft="@+id/fasilitas_Rumahsakit"
+        android:text="Nama Rumah Sakit" />
+
+    <TextView
+        android:id="@+id/fasilitas_Rumahsakit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:layout_alignBaseline="@+id/fasilitasRumahsakit"
+        android:layout_alignBottom="@+id/fasilitasRumahsakit"
+        android:layout_alignLeft="@+id/jenis_Rumahsakit"
+        android:text="Fasilitas Rumah Sakit" />
+
+    <TextView
+        android:id="@+id/jenis_Rumahsakit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/jenisRumahsakit"
+        android:layout_alignBottom="@+id/jenisRumahsakit"
+        android:textSize="17sp"
+        android:layout_alignLeft="@+id/alamat_Rumahsakit"
+        android:text="Jenis Rumah Sakit" />
+
+    <TextView
+        android:id="@+id/alamat_Rumahsakit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:layout_alignBaseline="@+id/alamatRumahsakit"
+        android:layout_alignBottom="@+id/alamatRumahsakit"
+        android:layout_marginLeft="30dp"
+        android:text="Alamat Rumah Sakit" />
+
+
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/noRumahsakit"
+        android:layout_below="@+id/noRumahsakit"
+        android:background="@drawable/costumebg1"
+        android:layout_marginTop="300dp"
+        android:textColor="#fff"
+        android:text="Back" />
+</RelativeLayout>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/backgrounda"
+    tools:context=".CreateDataActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_rumahsakit"
+        android:layout_marginTop="30dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/home"
+        app:civ_border_color="#fff"
+        app:civ_border_width="3dp" />
+
+    <TextView
+        android:layout_below="@+id/img_rumahsakit"
+        android:id="@+id/noRumahsakit"
+        android:layout_marginTop="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="Kode Rumah sakit"
+        android:textSize="17sp"
+        android:layout_marginLeft="12dp" />
+
+    <EditText
+        android:id="@+id/editnoRumahsakit"
+        android:layout_width="300dp"
+        android:layout_marginStart="20dp"
+        android:layout_height="35dp"
+        android:layout_alignLeft="@+id/noRumahsakit"
+        android:layout_below="@+id/noRumahsakit"
+        android:inputType="number"
+        android:textSize="11sp"
+        android:layout_marginLeft="20dp">
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/nama_rumahsakit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_below="@+id/editnoRumahsakit"
+        android:layout_marginTop="5dp"
+        android:text="Nama Rumah sakit"
+        android:textSize="17sp"
+        android:layout_marginLeft="12dp" />
+
+    <EditText
+        android:id="@+id/editnamaRumahsakit"
+        android:layout_height="38dp"
+        android:layout_width="300dp"
+        android:textSize="11sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="20dp"
+        android:layout_alignLeft="@+id/nama_rumahsakit"
+        android:layout_below="@+id/nama_rumahsakit"
+        android:layout_marginLeft="20dp" />
+
+    <TextView
+        android:id="@+id/fasilitasRumahsakit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editnamaRumahsakit"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="5dp"
+        android:textSize="17sp"
+        android:text="Fasilitas Rumah sakit "
+        android:layout_marginLeft="12dp" />
+
+    <EditText
+        android:id="@+id/editfasilitasRumahsakit"
+        android:layout_height="38dp"
+        android:layout_width="300dp"
+        android:textSize="11sp"
+        android:layout_marginStart="20dp"
+        android:layout_alignLeft="@+id/fasilitasRumahsakit"
+        android:layout_below="@+id/fasilitasRumahsakit"
+        android:layout_marginLeft="20dp" />
+
+    <TextView
+        android:id="@+id/jenis_rumahsakit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editfasilitasRumahsakit"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="5dp"
+        android:textSize="17sp"
+        android:text="Jenis Rumah sakit"
+        android:layout_marginLeft="12dp" />
+
+    <EditText
+        android:id="@+id/editjenisRumahsakit"
+        android:layout_height="38dp"
+        android:layout_width="300dp"
+        android:textSize="11sp"
+        android:layout_marginStart="20dp"
+        android:layout_alignLeft="@+id/jenis_rumahsakit"
+        android:layout_below="@+id/jenis_rumahsakit"
+        android:layout_marginLeft="20dp" />
+
+    <TextView
+        android:id="@+id/alamat_rumahsakit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_below="@+id/editjenisRumahsakit"
+        android:layout_marginTop="5dp"
+        android:textSize="17sp"
+        android:text="Alamat Rumah sakit"
+        android:layout_marginLeft="12dp" />
+
+    <EditText
+        android:id="@+id/editalamatRumahsakit"
+        android:layout_height="38dp"
+        android:layout_width="300dp"
+        android:textSize="11sp"
+        android:layout_marginStart="20dp"
+        android:layout_alignLeft="@+id/alamat_rumahsakit"
+        android:layout_below="@+id/alamat_rumahsakit"
+        android:layout_marginLeft="20dp" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="154dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/editalamatRumahsakit"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/costumebg1"
+        android:text="save"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/button2"
+        android:text="Back"
+        android:layout_toEndOf="@+id/button1"
+        android:layout_marginStart="30dp"
+        android:layout_below="@+id/editalamatRumahsakit"
+        android:layout_width="145dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:textColor="#fff"
+        android:background="@drawable/costumebg1"
+        android:layout_marginRight="40dp"
+        android:layout_toRightOf="@+id/button1" />
+</RelativeLayout>
+
+
